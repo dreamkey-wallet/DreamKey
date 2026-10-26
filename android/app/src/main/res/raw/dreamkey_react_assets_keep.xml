@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Hermes resolves these resources by name from JavaScript. Android's resource
+     shrinker cannot reliably discover those references in compiled bytecode. -->
+<resources xmlns:tools="http://schemas.android.com/tools"
+    tools:keep="@drawable/src_ui_dapp_logos_*,@drawable/node_modules_reactnavigation_*" />

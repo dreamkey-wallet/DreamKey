@@ -1,0 +1,57 @@
+{
+  "name": "independent-wallet",
+  "version": "0.1.0",
+  "private": true,
+  "license": "MIT",
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "verify:open-source": "node scripts/verify-open-source.cjs",
+    "android": "react-native run-android",
+    "android:debug": "react-native build-android --tasks assembleDebug",
+    "android:release": "react-native build-android --tasks assembleRelease --extra-params=-PreactNativeArchitectures=armeabi-v7a,arm64-v8a",
+    "android:bundle": "react-native build-android --tasks bundleRelease --extra-params=-PreactNativeArchitectures=armeabi-v7a,arm64-v8a",
+    "ios": "react-native run-ios",
+    "start": "react-native start",
+    "update:bundle": "node scripts/update-bundle.cjs",
+    "verify:update-package": "node scripts/verify-update-package.cjs",
+    "verify:update-policy": "node scripts/verify-update-policy.cjs",
+    "verify:update-ui": "node scripts/verify-update-ui.cjs",
+    "verify:updates": "node scripts/verify-update-package.cjs && node scripts/verify-update-policy.cjs && node scripts/verify-update-ui.cjs && node scripts/verify-android-updates.cjs && node scripts/verify-ios-updates.cjs",
+    "verify:wallet-manager": "node scripts/verify-wallet-manager.cjs",
+    "verify:favicon": "node scripts/verify-favicon.cjs && node scripts/verify-favicon-cache.cjs && node scripts/verify-popular-dapps.cjs && node scripts/verify-dapp-landing.cjs",
+    "verify:rpc": "node scripts/verify-networks.cjs && node scripts/verify-rpc-catalog.cjs && node scripts/verify-rpc-catalog-service.cjs && node scripts/verify-rpc.cjs && node scripts/verify-rpc-recovery.cjs && node scripts/verify-rpc-broadcast.cjs && node scripts/verify-send-readiness.cjs && node scripts/verify-home-refresh.cjs && node scripts/verify-rpc-health.cjs && node scripts/verify-rpc-route-health.cjs && node scripts/verify-rpc-picker.cjs && node scripts/verify-rpc-preferences.cjs",
+    "verify:security": "node scripts/verify-auth-flow.cjs && node scripts/verify-app-visibility.cjs && node scripts/verify-session-security.cjs && node scripts/verify-password-vault.cjs && node scripts/verify-password-verifier.cjs && node scripts/verify-wallet-manager.cjs && node scripts/verify-wallet-management.cjs && node scripts/verify-dapp-security.cjs && node scripts/verify-signature-ui.cjs && node scripts/verify-dependency-security.cjs"
+  },
+  "dependencies": {
+    "@react-native-clipboard/clipboard": "^1.16.3",
+    "@react-navigation/native": "^7.5.0",
+    "@react-navigation/native-stack": "^7.20.0",
+    "ethers": "^6.13.5",
+    "react": "^18.3.1",
+    "react-native": "^0.76.9",
+    "react-native-camera-kit": "^18.0.1",
+    "react-native-get-random-values": "^1.11.0",
+    "react-native-keychain": "^9.2.3",
+    "react-native-permissions": "^5.6.2",
+    "react-native-qrcode-svg": "^6.3.21",
+    "react-native-safe-area-context": "^5.10.1",
+    "react-native-screens": "4.5.0",
+    "react-native-svg": "^15.12.1",
+    "react-native-url-polyfill": "^4.0.0",
+    "react-native-webview": "^13.13.1"
+  },
+  "overrides": {
+    "fast-xml-parser": "5.11.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.25.2",
+    "@react-native-community/cli": "15.0.1",
+    "@react-native-community/cli-platform-android": "15.0.1",
+    "@react-native-community/cli-platform-ios": "15.0.1",
+    "@react-native/babel-preset": "0.76.9",
+    "@react-native/metro-config": "0.76.9",
+    "@react-native/typescript-config": "0.76.9",
+    "@types/react": "^18.3.12",
+    "typescript": "^5.6.3"
+  }
+}

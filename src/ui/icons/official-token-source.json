@@ -1,0 +1,12 @@
+{
+  "width": 512,
+  "height": 512,
+  "sourceUrl": "https://docs.usdt0.to/img/assets/tokens/AssetSymbol_USDT0_Primary.svg",
+  "icons": {
+    "usdt0": {
+      "body": "<circle cx=\"256\" cy=\"256\" r=\"256\" fill=\"url(#usdt0Gradient)\"/><path fill=\"#f0f0f0\" d=\"M386.894656,186.5353415v-58.1962389H125.1063757v58.1962389h101.7968483v58.1653341h58.1950485v-58.1653341h101.7963835Z\"/><path fill=\"#f0f0f0\" d=\"M226.9344236,361.0610696v58.1965677h58.163849v-58.1965677h58.1653454v-116.360394h-58.1653454v116.360394h-58.163849Z\"/><path fill=\"#f0f0f0\" d=\"M226.9329271,244.7006756h-58.1950485v116.360394h58.1950485v-116.360394Z\"/><defs><radialGradient id=\"usdt0Gradient\" cx=\"435.1205634\" cy=\"74.8048049\" fx=\"435.1205634\" fy=\"74.8048049\" r=\"509.0101437\" gradientUnits=\"userSpaceOnUse\"><stop offset=\"0\" stop-color=\"#00a67a\"/><stop offset=\"1\" stop-color=\"#00664b\"/></radialGradient></defs>"
+    }
+  },
+  "transformation": "Preserve official symbol paths and gradient; omit decorative raster noise overlay at small display sizes.",
+  "fetchedAt": "2026-10-13"
+}

@@ -1,0 +1,81 @@
+# Node / package manager
+node_modules/
+dist/
+coverage/
+.cache/
+.eslintcache
+.env
+.env.*
+!.env.example
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Local application data
+data/*
+!data/.gitkeep
+*.log
+
+# React Native / Metro
+.metro-health-check*
+# Local QA screenshots and temporary bundle output.
+/.bundle/
+
+# Android / Gradle / IntelliJ
+**/.gradle/
+**/.gradle-cache/
+**/build/
+**/local.properties
+**/.cxx/
+**/.externalNativeBuild/
+.idea/
+*.iml
+*.hprof
+
+# Android release artifacts and signing material
+*.apk
+*.aab
+*.jks
+*.p12
+*.pfx
+*.keystore
+!**/debug.keystore
+update-private.pem
+*-private.pem
+*.key
+*.pem
+*.cer
+*.crt
+*.mobileprovision
+*.provisionprofile
+*.p8
+*.p7b
+*.p7c
+
+# iOS / Xcode / CocoaPods
+**/Pods/
+**/DerivedData/
+**/xcuserdata/
+*.xcuserstate
+*.ipa
+*.dSYM
+*.dSYM.zip
+**/.xcode.env.local
+vendor/bundle/
+
+# Bundles are built from source by Gradle/Xcode; never ship stale plaintext copies.
+android/app/src/main/assets/index.android.bundle
+ios/main.jsbundle
+/.bundle/*.bundle
+*.map
+**/release-signing.properties
+**/key.properties
+**/keystore.properties
+# Generated bundle asset folders.
+ios/assets/
+/.bundle/assets/
+
+# OS files
+.DS_Store
+Thumbs.db

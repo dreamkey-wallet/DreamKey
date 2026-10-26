@@ -1,0 +1,7 @@
+# Copy to release-signing.properties in this directory and fill in your OWN credentials.
+# The local file and production keystores are ignored by Git.
+# Relative keystore paths are resolved from android/app; use / for Windows paths.
+WALLET_RELEASE_STORE_FILE=
+WALLET_RELEASE_STORE_PASSWORD=
+WALLET_RELEASE_KEY_ALIAS=
+WALLET_RELEASE_KEY_PASSWORD=
